@@ -1,0 +1,2 @@
+include README.md LICENSE requirements.txt
+recursive-include scenefun3d/benchmark_file_lists *.csv *.txt

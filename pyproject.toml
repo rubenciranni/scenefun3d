@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scenefun3d"
+version = "0.1.0"
+description = "SceneFun3D Toolkit. Please refer to the documentation page for information and detailed instructions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "open3d",
+    "plyfile",
+    "imageio",
+    "opencv-python",
+    "moviepy>=2.0.0",
+    "scipy",
+    "tqdm",
+    "tyro",
+    "viser",
+]
+
+[tool.setuptools.packages]
+find = { where = ["src"] }
+
+[tool.setuptools.package-data]
+"scenefun3d.benchmark_file_lists.arkitscenes" = ["*.csv"]
+"scenefun3d.benchmark_file_lists" = ["*.txt", "*.csv"]
