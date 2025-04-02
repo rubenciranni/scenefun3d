@@ -10,7 +10,7 @@ import os
 import open3d as o3d
 import glob
 import imageio
-import utils.homogenous as hm
+import scenefun3d.utils.homogenous as hm
 from scenefun3d.utils.rigid_interpolation import rigid_interp_split, rigid_interp_geodesic
 
 from scenefun3d.utils.data_parser_paths import data_asset_to_path
