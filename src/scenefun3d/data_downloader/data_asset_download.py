@@ -12,7 +12,7 @@ from scenefun3d.data_downloader.download_utils.download_data import download_ass
     download_assets_for_video_id, default_raw_dataset_assets, find_arkitscenes_split, \
     visit_related_assets
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(

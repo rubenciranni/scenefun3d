@@ -31,6 +31,9 @@ dependencies = [
 [tool.setuptools.packages]
 find = { where = ["src"] }
 
+[project.scripts]
+download-data-assets = "scenefun3d.data_downloader.data_asset_download:main"
+
 [tool.setuptools.package-data]
 "scenefun3d.benchmark_file_lists.arkitscenes" = ["*.csv"]
 "scenefun3d.benchmark_file_lists" = ["*.txt", "*.csv"]
